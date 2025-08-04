@@ -1,4 +1,3 @@
-// components/FunnelLabelBadge.tsx
 export function FunnelLabelBadge({
   label,
   isLowest,

@@ -6,7 +6,7 @@ export function TrendBadge({ value }: { value: string }) {
 
   let textColor = "";
   let bgColor = "";
-  let Arrow = isPositive ? ArrowUpRight : ArrowDownRight;
+  const Arrow = isPositive ? ArrowUpRight : ArrowDownRight;
 
   if (numeric <= 5) {
     textColor = "text-yellow-600";
