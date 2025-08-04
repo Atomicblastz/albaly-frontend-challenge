@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Albaly Insights Dashboard Coding Challenge
+---
 
-## Getting Started
+## Setup Instructions
 
-First, run the development server:
+### 1. Clone the Repository
+ 
+Run git clone https://github.com/...
+cd albaly-dashboard
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 2. Install Dependencies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run "npm install" or "yarn install"
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Start the Development Server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run "npm run dev"
 
-## Learn More
+### Project Description
+The Albaly Insights Dashboard is a modern and user-friendly analytics dashboard built for developers and businesses. It's designed to help teams quickly understand their product sales performances, trends in current sales, customer drop-off in a monthly basis, and conversion funnel rate through clear, interactive visuals and clean UI components.
 
-To learn more about Next.js, take a look at the following resources:
+For usability and attention to details, I implemented a TrendBadge.tsx component that represents performance changes using color-coded arrows and background tags which there are 3 total different colors; green for positive, red for negative, and yellow for tiny or slight shifts. Additionally, this component is reusable so I can make this as a central and universal component and reuse it at any other components or pages.
+Furthermore, if no profile image is present, the app shows a placeholder avatar using the initials character of the user's name with a randomly assigned background color, similar to what services like Google or Youtube. For examples; A man named Soin Yin, if he hasn't uploaded his profile image yet, the system would bring his first character from his first name and last name and put together to become "SY" (Soin Yin).
+Most of the components are designed to be reusable and easy to extend, making the project ideal as a foundation for more complex dashboards or admin panels.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Features
+- Fully responsive layout
+  
+- Interactive data visualizations using Recharts
+   
+- Modular and reusable components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Conditional color logic for trends and performance
 
-## Deploy on Vercel
+- Avatar fallback system mimicking Google and Youtube initial
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Imported icons and additional stylings from Lucide React and TailwindCSS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Project Assumptions
+I made a few assumptions to stay focus on the scope and the implementation clean:
+
+1. All data like KPI status, charts, activities window, etc. is being mocked up through the route API responses in frontend. No real backend or database connection is implemented for this version.
+
+2. The dashboard is designed for display purposes only and doesn't include authentication or multi-user support. So I assume that only one single user can interact with the dashboard.
+
+3. I have implemented the UI and layout according to the requirements so not only I designed for desktop but it is also mobile-friendly too, but the main design and spacing choices are optimized for desktop and tablet screen sizes.
+
+4. I've also noticed that many UI components are lightweight by using Tailwind CSS and avoided any heavy UI libraries, so this application might prioritize on performance and readability.
+
+### Author
+Developed by Atomicblastz
+📫 Reach me at: badgest03@gmail.com or via GitHub Issues
