@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.responsive-container {
+  @apply p-2 sm:p-4 md:p-6 w-full h-full max-w-full min-w-[375px];
+}
+
+@theme {
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-custom: 890px; /* This is your new custom breakpoint */
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
