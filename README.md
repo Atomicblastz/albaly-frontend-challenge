@@ -5,16 +5,17 @@
 
 ### 1. Clone the Repository
  
-Run git clone https://github.com/...
-cd albaly-dashboard
+- Run git clone https://github.com/...
+  
+- cd to your local directory
 
 ### 2. Install Dependencies
 
-Run "npm install" or "yarn install"
+- Run "npm install" or "yarn install"
 
 ### 3. Start the Development Server
 
-Run "npm run dev"
+- Run "npm run dev"
 
 ### Project Description
 The Albaly Insights Dashboard is a modern and user-friendly analytics dashboard built for developers and businesses. It's designed to help teams quickly understand their product sales performances, trends in current sales, customer drop-off in a monthly basis, and conversion funnel rate through clear, interactive visuals and clean UI components.
